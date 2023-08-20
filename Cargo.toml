@@ -1,0 +1,27 @@
+[package]
+name = "actix-logger"
+version = "0.4.1"
+edition = "2021"
+description = "drop-in replacement for the actix web logger middleware"
+license = "Apache-2.0"
+authors = ["fawn <fawn@envs.net>"]
+homepage = "https://codeberg.org/fawn/actix-logger"
+repository = "https://codeberg.org/fawn/actix-logger"
+categories = ["logger", "actix-web"]
+
+[dependencies]
+actix-http = "3.3"
+actix-service = "2.0"
+actix-utils = "3.0"
+actix-web = "4.3"
+bytes = "1.4"
+futures-core = "0.3"
+http = "0.2"
+pin-project-lite = "0.2"
+log = "0.4"
+regex = "1.9"
+time = { version = "0.3", features = ["formatting"] }
+
+[dev-dependencies]
+actix-rt = "2.8"
+env_logger = "0.10"
